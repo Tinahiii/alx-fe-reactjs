@@ -1,12 +1,24 @@
-// UserProfile.jsx
-const UserProfile = (props) => {
+
+
+function App() {
   return (
-    <div style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '5px' }}>
-      <h2>{props.name}</h2>
-      <p>Age: {props.age}</p>
-      <p>Bio: {props.bio}</p>
+    <div>
+      <h1>Welcome to ALX React App</h1>
+
+      <UserProfile 
+        name="Alice" 
+        age={25} 
+        bio="Loves hiking and photography" 
+      />
+
+      <UserProfile 
+        name="Bob" 
+        age={30} 
+        bio="Enjoys cooking and coding" 
+      />
     </div>
   );
-};
+}
 
-export default UserProfile;
+export default App;
+

@@ -6,7 +6,7 @@ import './App.css'
 import Header from './Header';
 import MainContent from './MainContent';
 import Footer from './Footer';
-import Userprofile from './userprofile';
+import Userprofile from './Userprofile';
 
 function App() {
   const [count, setCount] = useState(0)

@@ -1,14 +1,13 @@
-import AddRecipeForm from './components/AddRecipeForm';
-import RecipeList from './components/RecipeList';
+import create from 'zustand';
 
-function App() {
-  return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Recipe Sharing App</h1>
-      <AddRecipeForm />
-      <RecipeList />
-    </div>
-  );
-}
+// Create Zustand store
+export const useRecipeStore = create((set) => ({
+  recipes: [],
 
-export default App;
+  // Action to add a recipe
+  addRecipe: (newRecipe) =>
+    set((state) => ({ recipes: [...state.recipes, newRecipe] })),
+
+  // Action to initialize/set recipes
+  setRecipes: (recipes) => set({ recipes }),
+}));

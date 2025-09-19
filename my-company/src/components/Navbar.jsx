@@ -5,7 +5,10 @@ function Navbar() {
     <nav style={{ 
       backgroundColor: 'navy', 
       padding: '10px', 
-      textAlign: 'center' 
+      textAlign: 'center',
+       display: 'flex',          
+        justifyContent: 'space-between',
+      
     }}>
       <Link to="/" style={{ margin: '0 15px', color: 'white', textDecoration: 'none' }}>Home</Link>
       <Link to="/about" style={{ margin: '0 15px', color: 'white', textDecoration: 'none' }}>About</Link>

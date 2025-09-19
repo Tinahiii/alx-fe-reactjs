@@ -7,6 +7,8 @@ import Header from './Header';
 import MainContent from './MainContent';
 import Footer from './Footer';
 import UserProfile from './components/UserProfile';
+import ProfilePage from './ProfilePage';
+import UserContext from './UserContext';
 
 function App() {
   const [count, setCount] = useState(0)
